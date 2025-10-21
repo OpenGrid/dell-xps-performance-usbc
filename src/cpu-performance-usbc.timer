@@ -1,0 +1,11 @@
+[Unit]
+Description=Maintain CPU Performance Settings Timer
+Requires=cpu-performance-usbc.service
+
+[Timer]
+OnBootSec=30sec
+OnCalendar=*:0/5
+Persistent=true
+
+[Install]
+WantedBy=timers.target

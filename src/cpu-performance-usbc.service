@@ -1,0 +1,10 @@
+[Unit]
+Description=Set CPU Performance for USB-C Dock Power
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set-cpu-performance.sh
+
+[Install]
+WantedBy=multi-user.target
